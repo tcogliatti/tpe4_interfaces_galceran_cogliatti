@@ -1,0 +1,99 @@
+
+.body, h1{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.navbar-toggler{
+    border: none !important;
+    justify-content: flex-end !important;
+}
+.navigation-section{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* position: sticky; */
+    position: fixed;
+}
+.navbar .container-fluid {
+    background: rgba(217, 217, 217, 0.1) !important;
+    width: 100% !important;
+    margin: 0px !important;
+}
+.navbar-brand img{
+    position: absolute;
+    align-items: end !important;
+    width: 15% !important;
+    left: 15px;
+    top: 5px;
+}
+.active{
+    background-color: rgba(217,217,217,0.67) !important;
+    border-bottom: 10px solid rgba(79,68,153,1) !important;
+}
+.nav-link{
+    text-align: end;
+    padding: 10px !important;
+}
+.header{
+    background-image: url('../img/primer\ cuatri.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+}
+.lema{
+    position: fixed;
+    width: 350px;
+    height: 194px;
+    right: 10px;
+    top: 150px;
+}
+.lema h1{
+    font-family: 'Inter';
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: aliceblue;
+}
+.lema h1 span{
+    font-weight: bold;
+    color: #CD3034;
+}
+
+@media only screen and (min-width: 760px) {
+
+    .navbar-nav{
+        width: 100% !important;
+        justify-content: flex-end !important;
+    }
+    /* .nav-link{
+        text-align: end;
+    } */
+    .top-nav{
+        height: 45px;
+        width: 100%;
+        background-color: rgba(208,211,167,0.72);
+    }
+    .container{
+        max-width: 100% !important;
+    }
+    .navbar-brand img{
+        position: absolute;
+        align-items: end !important;
+        width: 8% !important;
+        left: 10%;
+        top: -30px;
+    }
+    .lema{
+        width: 800px;
+        height: 194px;
+        right: 90px;
+        top: 150px;
+    }
+    .lema h1{
+        font-size: 60px;
+        line-height: 73px;
+    }
+
+    
+}

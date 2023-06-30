@@ -3,9 +3,9 @@ input[type=text], input[type=password], input[type=email]{
     padding: 12px 20px;
     margin: 2px 0 20px;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #EDEDED;
     box-sizing: border-box;
-    background: rgba(239, 240, 242, 0.8);
+    background: #EDEDED;
   }
   
   button {
@@ -52,6 +52,7 @@ input[type=text], input[type=password], input[type=email]{
   }
   
   .container {
+    background-color: #FFFFFF;
     padding: 16px;
   }
   .login{
@@ -70,6 +71,10 @@ input[type=text], input[type=password], input[type=email]{
   .anchor{
     text-decoration: none;
     color: #28220d;
+  }
+  .form-control{
+    background-color: #EDEDED !important;
+    border-radius: 0% !important;
   }
   
   /* Change styles for span and cancel button on extra small screens */

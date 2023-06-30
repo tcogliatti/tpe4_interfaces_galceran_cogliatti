@@ -2,6 +2,14 @@
 .body, h1{
     font-family: Arial, Helvetica, sans-serif !important;
 }
+p{
+    font-size: 20px;
+    margin-top: 10px !important;
+}
+.news_section .history-section{
+    margin-top: 40px;
+    border-bottom: 1px solid   #7c2225;
+}
 .navbar-toggler{
     border: none !important;
     justify-content: flex-end !important;
@@ -59,6 +67,60 @@
     font-weight: bold;
     color: #CD3034;
 }
+.card-group {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card-title{
+    margin: 20px;
+    border-bottom: 7px solid #4F4499;
+    z-index: 20;
+}
+
+.card{
+    margin: 10px !important; 
+    margin-top: 50px;
+}
+.btn-leer{
+    position: absolute;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #877C54;
+    }
+.div-leer{
+    margin-left: 70px;
+    width: 70%;
+    height: 50px;
+    border: 1px solid  #877C54 !important ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.leer{
+    padding-bottom: 20px;
+}
+.col{
+    margin-left: 30px;
+}
+.history-tittle{
+    margin: 15px;
+}
+.history-div{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.history-text{
+    margin-bottom: 30px;
+}
 
 @media only screen and (min-width: 760px) {
 
@@ -91,9 +153,60 @@
         top: 150px;
     }
     .lema h1{
-        font-size: 60px;
+        font-size: 100px !important;
         line-height: 73px;
     }
-
-    
+ 
+    .div-separador{
+        display: flex;
+        align-items: center
+        
+    }
+    .separador{
+        position: absolute;
+        width: 31.24px;
+        height: 44.72px;
+        left: 36px;
+        background: rgba(181, 150, 28, 0.87);
+        border-radius: 0px;
+        z-index: 1;
+    }
+    .card-img-top{
+        height: 270px;
+    }
+    .card {
+        margin-left: 70px !important;
+        margin-right: 70px !important;
+        margin-bottom: 50px;
+        border-radius: 20px !important;
+        box-shadow: 10px 5px 5px rgba(181, 150, 28, 0.27);
+    }
+    .leer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .div-leer{
+        justify-content: center;
+        width: 30%;
+        margin-bottom: 50px;
+    }
+    .img-fluid{
+        height: 400px !important;
+    }
+    .history-div{
+        margin: 70px;
+        display: flex;
+    }
+    .row{
+        justify-content: center
+    }
+    .card-text{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .history-text{
+        height: 250px;
+    }
 }

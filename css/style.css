@@ -1,6 +1,9 @@
-
-.body, h1{
+h1, h2, p, h5, h6{
     font-family: Arial, Helvetica, sans-serif !important;
+    color: #424141 !important;
+}
+body{
+    background-color: rgb(238, 238, 238);
 }
 .navbar-toggler{
     border: none !important;
@@ -12,6 +15,7 @@
     margin-right: 0px;
     /* position: sticky; */
     position: fixed;
+    z-index: 10 !important;
 }
 .navbar .container-fluid {
     background: rgba(217, 217, 217, 0.1) !important;
@@ -42,11 +46,12 @@
     background-position: center;
 }
 .lema{
-    position: fixed;
+    position: absolute;
     width: 350px;
     height: 194px;
     right: 10px;
     top: 150px;
+    z-index: 1;
 }
 .lema h1{
     font-family: 'Inter';
@@ -59,7 +64,75 @@
     font-weight: bold;
     color: #CD3034;
 }
-
+.separador{
+    background: linear-gradient(180deg, rgba(181, 158, 28, 0.574) 0%, rgba(255,255,255,0) 100%);
+    width: 100%;
+    height: 70px;
+}
+.article-header{
+    display: flex;
+    border-bottom: 10px solid #4F4499;
+}
+.article-header div{
+    width: 56px;
+    height: 48px;
+    background-color: #CD4130;
+}
+.article-header h2{
+    padding-top: 8px;
+    width: 100%;
+    font-weight: lighter !important;
+}
+.article-header span{
+    font-weight: bold;
+}
+.article-sub-news{
+    background-color: rgba(181,150,28,0.37) !important;
+    height: 60px !important;
+    width: 40px !important;
+}
+.article-sub{
+    background-color: rgba(181,150,28,0.37) !important;
+    height: 35px !important;
+    width: 40px !important;
+}
+.article-sub + h2{
+    font-size: 20px;
+}
+.card-news{
+    box-shadow: 4px 4px 12px 0px rgb(174, 174, 174);
+}
+.card-news h2{
+    font-size: 20px;
+}
+.btn-class{
+    border: 2px solid #877C54 !important;
+    border-radius: 0px !important;
+    /* padding-left: 100px !important;
+    padding-right: 100px !important;   */
+    color: #877C54 !important; 
+    font-weight: bold !important; 
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    /* margin-left: 24px !important; */
+    /* margin-right: 24px !important; */
+    width: 100%;
+}
+.team-card h5{
+    margin-top: 10px;
+    font-size: 15px !important;
+    text-align: center;
+    font-weight: bold;
+}
+.team-card h6{
+    margin-top: -4px;
+    font-size: 15px !important;
+    text-align: center;
+}
+.box-img-hist-home{
+    height: 400px !important;
+    overflow: hidden;
+}
 @media only screen and (min-width: 760px) {
 
     .navbar-nav{
@@ -88,12 +161,17 @@
         width: 800px;
         height: 194px;
         right: 90px;
-        top: 150px;
+        top: 200px;
     }
     .lema h1{
         font-size: 60px;
         line-height: 73px;
     }
+    .article-header h2{
+        text-align: start !important;
+        margin-left: 15px !important;
+    }
+
 
     
 }

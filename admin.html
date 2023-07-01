@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/nosotros.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -29,21 +30,21 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="index.html">Colegio Del Carmen</a> 
+                            <a class="nav-link " aria-current="page" href="index.html">Colegio Del Carmen</a> 
                             <a class="nav-link" href="news.html">Novedades</a>
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                             <a class="nav-link" href="history.html">Historia</a>
-                            <a class="nav-link" href="comment.html">Contacto</a>
-                            <a class="nav-link" href="login.html">Iniciar sesión</a>
+                            <a class="nav-link active" href="comment.html">Administrador: Jorge</a>
+                            <a class="nav-link" href="index.html">Cerrar sesión</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
 
-        <div class="header">
+        <div class="header admin">
             <div class="lema">
-                <h1><span>Educando</span> con la Esperanza de un <span>Futuro Mejor</span></h1>
+                <h1><span>Administrador Página Principal</span></h1>
             </div>
         </div>
 
@@ -53,11 +54,11 @@
 
         <section class="">
 
-            <!-- Noticias -->
+            <!-- ALTA NOTICIA -->
             <div class="continer">
                 <div class="article-header col-12 col-sm-6">
                     <div></div>
-                    <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Ultimas <span>Noticias</span></h2>
+                    <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Noticias agregar</h2>
                 </div>
             </div>
 
@@ -66,39 +67,30 @@
                 <div class="container card-news p-4 m-sm-4 w-sm-50 col-12 col-sm-4">
                     <div class="article-header w-100">
                         <div class="article-sub-news"></div>
-                        <h2 class="pb-0 ps-3 pt-0 w-100 text-start m-0 align-text-bottom">Jornada de <span>ESI en la
-                                Escuela</span></h2>
+                        <h2 class="pb-0 ps-3 pt-0 w-100 text-start m-0 align-text-bottom">Ingresar título noticia</span></h2>
                     </div>
                     <div class="w-100">
-                        <img src="./img/noticia_1.jpg" alt="" class="w-100  mt-4">
+                        <img src="./img/upload.jpg" alt="" class="w-100  mt-4">
                     </div>
-                    <p class="lh-lg fw-lighter mt-3">
-                        Con la finalidad de pensar la Educación Sexual Integral y considerando su importancia ...
-                    </p>
-                    <h5 class="text-end mb-0">12/06/2023</h5>
+                    <div class="form-group mt-3">
+                        <input type="file" name="image_file" id="imageToUpload">
+                    </div>
+                    <div>
+                        <textarea class="form-control  pt-3 m-b 3" placeholder="Ingresar reseña de noticia - máximo 80 caracteres" id="floatingTextarea2" style="height: 100px" maxlength="80"></textarea>
+                    </div>
+                    <div class="form-input pt-3">
+                        <label class="form-label">Fecha y Hora:</label>
+                        <input id="inputDateTime" type="datetime-local" name="matchDate" value=""
+                            placeholder="01/01/2000 16:00" />
+                    </div>
+                    <div class="form-input pt-3">
+                        <button type="submit" id="save-match">Guardar</button>
+                    </div>
+
                 </div>
-
-                <div class="card-news p-4 m-sm-4 w-sm-50 col-12 col-sm-4">
-                    <div class="article-header w-100">
-                        <div class="article-sub-news"></div>
-                        <h2 class="pb-0 ps-3 pt-0 w-100 text-start m-0 align-text-bottom">Viaje de estudio a
-                            <span>Sierra de la Ventana</span></h2>
-                    </div>
-                    <div class="w-100 ">
-                        <img src="./img/noticia_1_cuerpo.jpg" alt="" class="w-100  mt-4 alto">
-                    </div>
-                    <p class="lh-lg fw-lighter mt-3">
-                        Alumnos de 4to año pudieron realizar la salida educativa tan esperada...
-                    </p>
-                    <h5 class="text-end mb-0">01/06/2023</h5>
-                </div>
-
-            
-
+        
             </article>
-            <div class="container d-flex justify-content-center ps-4 pe-4 w-sm-25 mb-5 mb-sm-0 pt-2">
-                <a class="btn btn-class col-12 col-sm-5" href="news.html" role="button">Leer Más -></a>
-            </div>
+          
 
             <div class="p-2"></div>
 
@@ -106,84 +98,80 @@
             <div class="continer">
                 <div class="article-header col-12 col-sm-6">
                     <div></div>
-                    <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Nuestro <span>Equipo</span></h2>
+                    <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Equipo docente</h2>
                 </div>
             </div>
 
-            <article class="container-article container d-flex flex-wrap justify-content-evenly mb-5 mx-sm-auto pt-5">
-                <div class="team-card col-6 mt-4 col-sm-4 col-xl-3">
-                    <div class="d-flex justify-content-center">
-                        <img src="./img/team_1.png" alt="" class="w-75">
-                    </div>
-                    <h5>Representante Legal</h5>
-                    <h6>Lic. Ignacio Prieto</h6>
-                </div>
-                <div class="team-card col-6 mt-4 col-sm-4 col-xl-3">
-                    <div class="d-flex justify-content-center">
-                        <img src="./img/team_2.png" alt="" class="w-75">
-                    </div>
-                    <h5>Representante Legal</h5>
-                    <h6>Prof. Valeria Lilián Ripa</h6>
-                </div>
-                <div class="team-card col-6 mt-4 col-sm-4 col-xl-3">
-                    <div class="d-flex justify-content-center">
-                        <img src="./img/team_3.png" alt="" class="w-75">
-                    </div>
-                    <h5>Representante Legal</h5>
-                    <h6>Prof. Mariela Acuilán</h6>
-                </div>
-                <div class=" d-block d-flex justify-content-center w-100 ps-4 pe-4 pt-5 pb-5">
-                    <a class="btn btn-class" href="history.html" role="button">Conocé nuestros docentes -></a>
-                </div>
-                
-        
-            </article>
-           
-            <!-- Equipo -->
-            <div class="continer">
-                <div class="article-header col-12 col-sm-6">
-                    <div></div>
-                    <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Tenemos <span>Historia</span></h2>
-                </div>
-            </div>
+            <!-- /////////////// MODIFICAR ELIMINAR DOCENTE ///////////////////// -->
+            <article class="pe-4 ps-4 p-sm-0 d-block d-sm-flex mb-5 justify-content-center mt-4">
 
-            <article class="container container-article mb-4">
+            <div class="table  mt-5 col-md-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Apellido y Nombre</th>
+                            <th scope="col">Agregar</th>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>Representante Legal</td> 
+                                <td>Lic. Ignacio Prieto</td>
+                                <td><a class="btn btn-success" href="./img/team_1.png">Ver</a> </td>
+                                <td><a class="btn btn-warning" href="">Editar</a> </td>
+                                <td><a class="btn btn-danger" href="">Eliminar</a> </td>
+                            </tr>
+                            <tr>
+                                <td>Profesor de Ciencias Naturales</td> 
+                                <td>Prof. Martín Campos</td>
+                                <td><a class="btn btn-success" href="./img/team_9.png">Ver</a> </td>
+                                <td><a class="btn btn-warning" href="">Editar</a> </td>
+                                <td><a class="btn btn-danger" href="">Eliminar</a> </td>
+                            </tr>
+                            <tr>
+                                <td>Preceptor Ciclo Básico</td> 
+                                <td>Prof. Luis Sainte cluque</td>
+                                <td><a class="btn btn-success" href="./img/team_11.png">Ver</a> </td>
+                                <td><a class="btn btn-warning" href="">Editar</a> </td>
+                                <td><a class="btn btn-danger" href="">Eliminar</a> </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>   
+    </article>
+                <!-- //////////////////  CARGAR DOCENTE ////////////////// -->
 
-
-                <div class="ps-4 pe-4 p-sm-0">
-                    <div class="d-sm-none d-flex article-header w-100 w-sm-50 mt-4">
-                            <div class="article-sub"></div>
-                            <h2 class="pb-0 ps-3 pt-0 w-100 text-start m-0 d-flex align-items-center">Nuestras <span class="ms-1"> Primeras Aulas</span></h2>
-                    </div>
-                </div>
-    
-                <div class="d-flex flex-column flex-sm-row flex-sm-row-reverse p-4 mt-sm-4">
-                    
-
-                    <div class="d-flex flex-column justify-content-between ps-sm-4">
-                        <div class="d-none d-sm-flex article-header w-100 ">
-                            <div class="article-sub"></div>
-                            <h2 class="pb-0 ps-3 pt-0 w-100 text-start m-0 d-flex align-items-center">Nuestras <span span class="ms-1"> Primeras Aulas</span></h2>
+    <article class="pe-4 ps-4 p-sm-0 d-block d-sm-flex mb-5 justify-content-center mt-4">
+        <div class="form  mt-5 col-md-8">
+            <form class="form j">                  
+                <div class="pl-5 ml-5 col-6 mt-4">
+                        <h4>Ingresar docente</h4>
+                            
+                        <div class="d-flex justify-content-center">
+                            <img src="./img/upload.jpg" alt="" class="w-100">
                         </div>
-                        <p class="lh-lg fw-lighter mt-sm-4">
-                            Las Hermanas Carmelitas fueron las primeras docetnes del colegio.  Aquí  las  vemos clases  a  los  alumnos  de  la primera promoción.
-                        </p>
-                        <div class="d-none d-sm-block d-flex justify-content-center w-100 mt-4">
-                            <a class="btn btn-class" href="#" role="button">Leer Más -></a>
+                        <div class="form-group mt-3">
+                            <input type="file" name="image_file" id="imageToUpload">
                         </div>
-                    </div>
-                    <div class="box-img-hist-home">
-                        <img src="./img/historia_1.jpg" alt="" class="">
-                    </div>
-    
+                        <div class="form-group pt-3">
+                            <label for="name">Cargo</label>
+                            <input name="name" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group pt-3">
+                            <label for="name">Apellido y nombre</label>
+                            <input name="name" type="text" class="form-control" required>
+                        </div>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary mt-2">Guardar</button>
+                        </div>
                 </div>
-
-                <div class="d-sm-none d-block d-flex justify-content-center w-100 ps-4 pe-4">
-                    <a class="btn btn-class" href="history.html" role="button">Leer Más -></a>
-                </div>
+            </form>
+        </div>
+    </article>
     
-            </article>
-
         </section>
 
         <footer class="p-4 pb-sm-0 px-sm-5 mt-4 d-flex flex-column align-content-center">
@@ -228,7 +216,7 @@
                 </div>
             </div>
             <div class="mb-sm-0 pb-0 footer-menu d-none d-sm-block">
-                <ul class="d-flex justify-content-center">
+                ul class="d-flex justify-content-center">
                     <li class="mx-3">
                         <a href="news.html">Novedades</a>
                     </li>

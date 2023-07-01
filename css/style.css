@@ -60,7 +60,11 @@ p{
     width: 100%;
     background-position: center;
 }
-
+.admin{
+    background-image: url('../img/admin.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .lema{
     position: absolute;
     width: 350px;

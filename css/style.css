@@ -13,8 +13,11 @@ body{
     background-color: rgb(238, 238, 238);
 }
 p{
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px !important;
+}
+.ligther{
+    color: #8b8b8b !important;
 }
 /* .news_section .history-section{
     margin-top: 40px;
@@ -182,13 +185,16 @@ section div{
     width: 40px !important;
 }
 .article-sub + h2{
-    font-size: 20px;
+    font-size: 24px;
 }
 .card-news{
     box-shadow: 4px 4px 12px 0px rgb(174, 174, 174);
 }
 .card-news h2{
     font-size: 20px;
+}
+.fs13{
+    font-size: 12px !important;
 }
 .btn-class{
     border: 2px solid #877C54 !important;
@@ -303,9 +309,9 @@ footer .social hr{
 .comments{
     margin-top: 80px;
     margin-bottom: 80px;
-    max-width: 900px !important;
-    border: 1px solid grey;
-    padding: 50px;
+    /* max-width: 900px !important; */
+    border: 1px solid #747474;
+    padding: 4px;
 }
 .box-textarea{
     height: 100px !important;
@@ -394,6 +400,12 @@ footer .social hr{
     }
     section>.container{
         max-width: 1100px;
-        
+    }
+    .comments{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        max-width: 70% !important;
+        border: 1px solid #c2c2c2;
+        padding 50px;
     }
 }

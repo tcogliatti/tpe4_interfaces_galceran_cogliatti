@@ -388,4 +388,7 @@ footer .social hr{
         max-width: 1100px;
         
     }
+    .text{
+        text-align: justify;
+    }
 }

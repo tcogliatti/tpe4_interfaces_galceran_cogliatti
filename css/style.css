@@ -59,6 +59,7 @@ p{
     width: 100%;
     background-position: center;
 }
+
 .lema{
     position: absolute;
     width: 350px;
@@ -254,5 +255,9 @@ footer h6{
     .article-header h2{
         text-align: start !important;
         margin-left: 15px !important;
+    }
+    .box-img-hist-home{
+        width: 500px!important;
+        overflow: hidden;
     }   
 }

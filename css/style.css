@@ -101,7 +101,7 @@ section div{
     margin: 10px !important; 
     margin-top: 50px;
 } */
-/* .btn-leer{
+.btn-leer{
     position: absolute;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -112,8 +112,8 @@ section div{
     font-size: 20px;
     text-align: center;
     color: #877C54;
-    } */
-/* .div-leer{
+    } 
+.div-leer{
     margin-left: 70px;
     width: 70%;
     height: 50px;
@@ -122,9 +122,10 @@ section div{
     justify-content: center;
     align-items: flex-start;
 } */
-/* .leer{
+ .leer{
     padding-bottom: 20px;
-} */
+} 
+/*
 .col{
     margin-left: 30px;
 }

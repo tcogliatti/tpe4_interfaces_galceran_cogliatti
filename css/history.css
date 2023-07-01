@@ -4,15 +4,15 @@
 .history{
     background-image: url('../img/frente_escuela.png');
 }
-.history-div{
+/* .history-div{
     padding-top: 50px;
     padding-bottom: 50px;
-}
-.history-section{
+} */
+/* .history-section{
     margin: 0;
     padding-left: 5px !important;
-    padding-right: 5px !important;
-}
+    padding-right: 5px !important; 
+}*/
 .history-text{
     margin-bottom: 10px;
     text-align: justify;
@@ -20,7 +20,10 @@
 .card-text{
     text-align: justify;
 }
+.img-fluid{
 
+    object-fit: cover;
+}
 @media only screen and (min-width: 760px) {
 
 .container{
@@ -29,9 +32,9 @@
         padding-left: 50px;
 }
     
-.history-section{
+/* .history-section{
     border-radius: 0;
-}
+} */
 .card{
     border-radius: 0% !important;
     border: none !important;
@@ -57,13 +60,13 @@
 .history-text{
     margin-top: 20px;
 }
-.history-div img{
+/* .history-div img{
     height: auto;
-}
+} */
 .columna{
     display: flex;
     flex-direction: column;
-    height: 360px;
+    /* height: 360px; */
     justify-content: space-between;
 }
 .card-text{

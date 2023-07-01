@@ -1,5 +1,5 @@
 .card-text{
-    text-align: justify;
+    /* text-align: justify; */
 }
 .box{
     padding-top: 50px;
@@ -10,7 +10,7 @@
     margin: 0;
     padding-left: 5px !important;
     padding-right: 5px !important;
-    text-align: justify;
+    /* text-align: justify; */
 }
 @media only screen and (min-width: 760px) {
 
@@ -35,14 +35,15 @@
 }
 .cuerpo{
     display: flex;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
 }
 .imagen{
+    margin-top: 60px;
     width: 370px;
-    height: 450px;
+    height: 50% !important;
     overflow: hidden;
 }
 .new{
-    text-align: justify;
+    /* text-align: justify; */
 }
 }

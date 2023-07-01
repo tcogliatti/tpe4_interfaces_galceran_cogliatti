@@ -139,7 +139,6 @@ section div{
 .history-text{
     margin-bottom: 30px;
 }
-*/
 .separador{
     background: linear-gradient(180deg, rgba(181, 158, 28, 0.574) 0%, rgba(255,255,255,0) 100%);
     width: 100%;
@@ -154,7 +153,16 @@ section div{
     height: 48px;
     background-color: #CD4130;
 }
+.equipo-home{
+    max-width: 70% !important;
 
+}
+@media (min-width: 720px){
+      .container.container-article, .container-article{
+    max-width: 1000px !important;
+      } 
+}
+  
 .article-header h2{
     padding-top: 8px;
     width: 100%;

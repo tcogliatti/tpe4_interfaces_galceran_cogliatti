@@ -75,7 +75,7 @@ p{
     text-align: right;
     color: aliceblue;
 }
-.lema h1 span{
+.lema h1 span, .box-titulo-articulo span{
     font-weight: bold;
     color: #CD3034;
 }
@@ -251,15 +251,75 @@ footer .social hr{
 .logo-crea-mobile{
     height: 50px;
 }
+.header-articulo{
+    background-image: url('../img/noticia_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+}
+.box-titulo-articulo{
+    position: absolute;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    right: 0px;
+    top: 150px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 10px solid #4F4499;
+}
+.box-titulo-articulo h1{
+    color: #747474 !important;
+    text-align: right;
+}
+/* section{
+    padding: ;
+} */
+/* footer div{
+    max-width: 1000px;
+} */
+.img-noti{
+    background-image: url("../img/noticia_1_cuerpo.jpg");
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+    height: 50vh;
+}
+.comments{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 900px !important;
+    border: 1px solid grey;
+    padding: 50px;
+}
+.box-textarea{
+    height: 100px !important;
+}
+
+.img-avatar1, .img-avatar2, .img-avatar3{
+    background-size: cover;
+    border-radius: 50%;
+    width: 90px !important;
+    height: 90px !important;
+}
+.img-avatar1{
+    background-image: url("../img/avatar_1.webp");
+}
+.img-avatar2{
+    background-image: url("../img/avatar_2.jpg");
+}
+.img-avatar3{
+    background-image: url("../img/avatar_3.webp");
+}
 @media only screen and (min-width: 480px) {
 
     .navbar-nav{
         width: 100% !important;
         justify-content: flex-end !important;
     }
-    /* .nav-link{
-        text-align: end;
-    } */
     .top-nav{
         height: 45px;
         width: 100%;
@@ -282,10 +342,10 @@ footer .social hr{
         top: 200px;
     }
     .lema h1{
-        font-size: 100px !important;
-        line-height: 73px;
+        font-size: 75px !important;
+        line-height: 80px !important;
     }
-    .article-header h2{
+    .h2{
         text-align: start !important;
         margin-left: 15px !important;
     }  
@@ -315,5 +375,13 @@ footer .social hr{
         border-right: 1px solid white;
         margin-right: 20px;
         padding-right: 20px;
+    }
+    .box-titulo-articulo{
+        position: absolute;
+        width: 40%;
+    }
+    section>.container{
+        max-width: 1100px;
+        
     }
 }

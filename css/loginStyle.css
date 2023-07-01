@@ -12,7 +12,7 @@ button {
   color: #443d24 ;
   padding: 8px 20px;
   margin: 8px 0;
-  border: 1px solid   #443d24 ;
+  border: 2px solid   #443d24 ;
   cursor: pointer;
   width: 100%;
 }
@@ -22,7 +22,7 @@ button:hover {
 }
 
 .btn-submit ,  .btn-submit-comment{
-  color: #28220d ;
+  color: #6F6F6F ;
   margin: 18px 0 8px;
   opacity: .78;
 
@@ -38,7 +38,6 @@ textarea{
 .cancelbtn {
   display: flex;
   justify-content: flex-end
-
 }
 
 .imgcontainer {
@@ -54,6 +53,9 @@ img.avatar {
 .container {
   background-color: #FFFFFF;
   padding: 16px;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  
 }
 .login{
   position: fixed;
@@ -63,6 +65,9 @@ img.avatar {
   left: 2px;
   top: 150px;
 }
+.ctn-form-login{
+  border-bottom: 10px solid #4F4499;
+}
 
 span.psw {
   float: right;
@@ -70,17 +75,20 @@ span.psw {
 }
 .anchor{
   text-decoration: none;
-  color: #28220d;
+  color: #6F6F6F;
 }
 .form-control{
   background-color: #EDEDED !important;
   border-radius: 0% !important;
 }
-
+label{
+  color: #6F6F6F;
+}
 /* Change styles for span and cancel button on extra small screens */
 @media only screen and (min-width: 760px) {
   .container {
-    width: 30% !important;
+    /* width: 30% !important; */
+    max-width: 400px !important;
     padding: 16px;
   }
   span.psw {
@@ -99,5 +107,12 @@ span.psw {
   .btn-submit-comment{
     width: 40%;
     
+  }
+  .background-gradient{
+    position: absolute;
+    bottom: 0px;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7343531162464986) 0%, rgba(255, 255, 255, 0) 100%);
   }
 }

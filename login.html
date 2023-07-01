@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Del Carmen Ingresar</title>
+  <title>Colegio Del Carme | Ingresar</title>
 
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/loginStyle.css">
@@ -28,7 +28,6 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link" aria-current="page" href="index.html">Colegio Del Carmen</a> 
                       <a class="nav-link" href="news.html">Novedades</a>
                       <a class="nav-link" href="#">Nosotros</a>
                       <a class="nav-link" href="history.html">Historia</a>
@@ -54,11 +53,12 @@
           
               <label for="psw">Contraseña</label>
               <input type="password" placeholder="" name="psw" required>
-                  
-              <button type="submit" class="btn-submit">Ingresar <img src="img/enviar.png" alt=""></button>
+                 <div id="msgBox"></div>  
+              <button type="submit" class="btn-submit">Ingresar <img src="img/enviar.png" alt="" onclic="enviar()"></button>
               
               <label>
               <span class="psw">Crear <a href="register.html" class="anchor">usuario</a></span>
+             
               </label>
             </div>
           </form>
@@ -71,6 +71,24 @@
   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
   integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script>
+      let btn = document.querySelector('form button');
+      let inputs = document.querySelectorAll('input');
+      let msgBox = document.querySelector('#msgBox');
+
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if(inputs[0].value == "jorge" & inputs[1].value == "interfaces")
+          window.location.href = './admin.html';
+        else if(inputs[0].value == "ricardo" & inputs[1].value == "lolo2022")
+          window.location.href = './noticia_1_login.html';
+        else
+          msgBox.innerHTML = "<p class='text-danger text-center'>error en datos de login</p>"
+
+      });
+
+
+  </script>
 </body>
 
 </html>

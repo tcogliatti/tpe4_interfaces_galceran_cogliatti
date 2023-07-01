@@ -33,8 +33,13 @@
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                             <a class="nav-link" href="history.html">Historia</a>
                             <a class="nav-link" href="comment.html">Contacto</a>
-
-                                <a class="nav-link" href="login.html">Iniciar sesión</a>
+                            <div class="space-login"></div>
+                            <div class="avatar-login d-flex">
+                                <div class="img-avatar3 col-2"></div>
+                                <div >
+                                    <a class="nav-link pb-0" href="index.html">Hola Ricardo!</a>
+                                    <a class="nav-link pt-0" href="index.html">Cerrar sesión</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,15 +124,19 @@
                         </div>
 
                         <div class="d-flex container">
+                            <div class="img-avatar3 col-2"></div>
                             <div class="d-flex align-content-center col-10">
-                                <h4 class="ms-2 my-auto fw-lighter"><span class="fw-bolder ms-1">Iniciar sesión</span class="me-1"> para dejar tus comentarios</h4>
+                                <h4 class="ms-2 my-auto fw-lighter"><span class="fw-bolder ms-1">Hola Ricardo</span>, déjanos tu Comentario.</h4>
                             </div>
                         </div>
                         <div class="box-textarea mt-3 container">
-                            <input class="col-12 h-100" type="textarea" rows="4" cols="50" disabled >
+                            <input class="col-12 h-100" type="textarea" rows="4" cols="50" required>
                         </div>
+                        
+                        <div id="msgBox"></div>  
+                        
                         <div class="d-flex justify-content-center mt-4">
-                            <a class="btn btn-class w-25" href="login.html" role="button" >Iniciar sesión</a>
+                            <a class="btn btn-class w-25" href="noticia_1_login.html" role="button" >Enviar</a>
                         </div>
                     </div>
                 </div>
@@ -215,6 +224,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
+    
+    <script>
+        let btn = document.querySelector('.btn');
+        let inputs = document.querySelector('input');
+        let msgBox = document.querySelector('#msgBox');
+  
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+          if(inputs.value != "")
+            window.location.href = './noticia_1_login.html';
+          else
+            msgBox.innerHTML = "<p class='text-danger text-center'>Escribenos tu mensaje antes de enviar</p>"
+  
+        });
+    </script>
+
+  
 </body>
 
 </html>

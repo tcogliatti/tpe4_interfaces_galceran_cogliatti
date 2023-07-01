@@ -324,7 +324,7 @@ footer .social hr{
     height: 100px !important;
 }
 
-.img-avatar1, .img-avatar2, .img-avatar3{
+.img-avatar1, .img-avatar2, .img-avatar3, .img-avatar-jorge{
     background-size: cover;
     border-radius: 50%;
     width: 90px !important;
@@ -338,6 +338,24 @@ footer .social hr{
 }
 .img-avatar3{
     background-image: url("../img/avatar_3.webp");
+}
+.img-avatar-jorge{
+    background-image: url("../img/avatar_jorge.jpeg");
+}
+.avatar-login{
+    position: fixed;
+    top:0;
+    right: 0;
+    background: rgb(245,246,247) !important;
+    margin: 0px;
+    width: 165px;
+}
+.avatar-login .img-avatar3,.avatar-login .img-avatar-jorge{
+    margin-left: -45px;
+    z-index: 100;
+}
+.space-login{
+    width: 210px;
 }
 
 

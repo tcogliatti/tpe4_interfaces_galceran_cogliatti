@@ -4,6 +4,7 @@ h1, h2, p, h5, h6{
 h1,footer h4, footer h6{
     color: white !important;
 }
+
 h2, p, h5, h6{
     font-family: Arial, Helvetica, sans-serif !important;
     color: #424141 !important;
@@ -15,10 +16,10 @@ p{
     font-size: 20px;
     margin-top: 10px !important;
 }
-.news_section .history-section{
+/* .news_section .history-section{
     margin-top: 40px;
     border-bottom: 1px solid   #7c2225;
-}
+} */
 .navbar-toggler{
     border: none !important;
     justify-content: flex-end !important;
@@ -78,7 +79,11 @@ p{
     font-weight: bold;
     color: #CD3034;
 }
-.card-group {
+section div{
+    max-width: 1200px !important;
+
+}
+/* .card-group {
     margin-top: 150px;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -89,13 +94,13 @@ p{
     margin: 20px;
     border-bottom: 7px solid #4F4499;
     z-index: 20;
-}
+} */
 
-.card{
+/* .card{
     margin: 10px !important; 
     margin-top: 50px;
-}
-.btn-leer{
+} */
+/* .btn-leer{
     position: absolute;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -106,8 +111,8 @@ p{
     font-size: 20px;
     text-align: center;
     color: #877C54;
-    }
-.div-leer{
+    } */
+/* .div-leer{
     margin-left: 70px;
     width: 70%;
     height: 50px;
@@ -115,10 +120,10 @@ p{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-}
-.leer{
+} */
+/* .leer{
     padding-bottom: 20px;
-}
+} */
 .col{
     margin-left: 30px;
 }
@@ -211,13 +216,42 @@ footer{
 footer h4{
     font-size: 14px;
     text-align: end;
-    font-weight: 200;
+    font-weight: 300 !important;
 }
 footer h6{
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 100 !important;
+    font-stretch: expanded !important;
 }
-@media only screen and (min-width: 760px) {
+footer span img{
+    width: 16px;
+    height: 14px;
+    margin-left: 11px;
+}
+footer .social img{
+    width: 31px;
+    height: 31px;
+}
+footer .social hr{
+    background-color: white !important;
+    border: none !important;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px !important;
+    margin-top: 20px !important;
+}
+.logo-uca{
+    height: 45px;
+}
+.logo-unicen{
+    height: 40px;
+    margin-top: 1px;
+}
+.logo-crea-mobile{
+    height: 50px;
+}
+@media only screen and (min-width: 480px) {
 
     .navbar-nav{
         width: 100% !important;
@@ -254,5 +288,32 @@ footer h6{
     .article-header h2{
         text-align: start !important;
         margin-left: 15px !important;
-    }   
+    }  
+    .logo-uca{
+        height: 80px;
+    }
+    .logo-unicen{
+        height: 75px !important;
+    }
+    .logo-crea{
+        height: 80px;
+    }
+    .footer-menu{
+        margin-top: 30px;
+        padding-top: 8px;
+        padding-bottom: 8px;;
+        border-top: 1px solid white;
+    }
+    .footer-menu li{
+        list-style: none;
+    }
+    .footer-menu li a{
+        text-decoration: none ;
+        color: white;
+    }
+    footer > .container > :nth-child(2) {
+        border-right: 1px solid white;
+        margin-right: 20px;
+        padding-right: 20px;
+    }
 }

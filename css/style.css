@@ -406,6 +406,6 @@ footer .social hr{
         margin-bottom: 80px;
         max-width: 70% !important;
         border: 1px solid #c2c2c2;
-        padding 50px;
+        /* padding: 50px; */
     }
 }

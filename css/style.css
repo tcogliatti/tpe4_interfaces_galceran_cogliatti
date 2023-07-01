@@ -46,7 +46,7 @@ p{
 }
 .active{
     background-color: rgba(217,217,217,0.67) !important;
-    border-bottom: 10px solid rgba(79,68,153,1) !important;
+    border-bottom: 5px solid rgba(79,68,153,1) !important;
 }
 .nav-link{
     text-align: end;
@@ -122,7 +122,7 @@ section div{
     justify-content: center;
     align-items: flex-start;
 } */
- .leer{
+.leer{
     padding-bottom: 20px;
 } 
 /*
@@ -139,6 +139,7 @@ section div{
 .history-text{
     margin-bottom: 30px;
 }
+*/
 .separador{
     background: linear-gradient(180deg, rgba(181, 158, 28, 0.574) 0%, rgba(255,255,255,0) 100%);
     width: 100%;
@@ -153,6 +154,7 @@ section div{
     height: 48px;
     background-color: #CD4130;
 }
+
 .article-header h2{
     padding-top: 8px;
     width: 100%;

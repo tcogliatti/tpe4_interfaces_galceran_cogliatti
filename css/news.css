@@ -39,12 +39,17 @@
     .cuerpo{
         display: flex;
         flex-wrap: nowrap;
+        height: 450px !important;
     }
     .imagen{
         margin-top: 60px;
         width: 370px;
         height: 50% !important;
         overflow: hidden;
+        height: auto !important;
+    }
+    .imagen img{
+        width: 100% !important;
     }
     .new{
         /* text-align: justify; */

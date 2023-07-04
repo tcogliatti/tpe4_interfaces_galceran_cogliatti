@@ -40,8 +40,8 @@ window.addEventListener("scroll", function () {
             // Scrolling hacia abajo
             if (scrollTop > 400) {
                 escudo.style.width = "7% !important";
-                escudo.style.top = "-19px";
-                escudo.style.transform = "scale(.50)";
+                escudo.style.top = "-6px";
+                escudo.style.transform = "scale(.70)";
             }
         } else {
             // Scrolling hacia arriba

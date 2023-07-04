@@ -91,7 +91,11 @@ label{
 }
 .comments-header{
   background-image: url('../img/comments_header.jpg');
-  
+}
+.create-user-ico img{
+  filter: grayscale(10);
+  transform: scale(.8);
+  margin-top: -2px;
 }
 /* Change styles for span and cancel button on extra small screens */
 @media only screen and (min-width: 760px) {

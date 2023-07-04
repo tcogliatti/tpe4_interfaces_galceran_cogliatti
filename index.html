@@ -12,7 +12,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
-<body class="w-100 p-0 m-0 h-100">
+<body class="w-100 p-0 m-0 h-100" id="home">
 
     <div class="container p-0 m-0 w-100">
 
@@ -39,10 +39,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            <a class="nav-link" href="news.html">Novedades</a>
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                            <a class="nav-link" href="history.html">Historia</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                            <a class="nav-link" href="#noticias">Novedades</a>
+                            <a class="nav-link" href="#equipo">Nosotros</a>
+                            <a class="nav-link" href="#historia">Historia</a>
                             <a class="nav-link" href="comment.html">Contacto</a>
                             <a class="nav-link" href="login.html">Iniciar sesión</a>
                         </div>
@@ -64,7 +64,7 @@
         <section class="">
 
             <!-- Noticias -->
-            <div class="container">
+            <div class="container" id="noticias">
                 <div class="article-header col-12 col-sm-6">
                     <div></div>
                     <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Ultimas <span>Noticias</span></h2>
@@ -122,7 +122,7 @@
     <div class="p-2"></div>
 
     <!-- Equipo -->
-    <div class="container mt-5">
+    <div class="container mt-5" id="equipo">
         <div class="article-header col-12 col-sm-6">
             <div></div>
             <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Nuestro <span>Equipo</span></h2>
@@ -152,7 +152,7 @@
             <h6>Prof. Mariela Acuilán</h6>
         </div>
         <div class="w-100 d-flex justify-content-center ps-4 pe-4 pt-5 pb-5">
-            <a class="btn btn-class col-12 col-sm-6" href="history.html" role="button">Todo nuestro equipo<span
+            <a class="btn btn-class col-12 col-sm-6" href="./nosotros.html" role="button">Todo nuestro equipo<span
                     class="ms-1"><img style="width: 20px;" src="./img/icon-arrow.png" alt=""></span></a>
         </div>
 
@@ -160,7 +160,7 @@
     </article>
 
     <!-- Equipo -->
-    <div class="container">
+    <div class="container" id="historia">
         <div class="article-header col-12 col-sm-6">
             <div></div>
             <h2 class="w-100 w-sm-50 text-center m-0 align-text-bottom">Tenemos <span>Historia</span></h2>
@@ -192,7 +192,7 @@
                     los alumnos de la primera promoción.
                 </p>
                 <div class="d-none d-sm-block d-flex justify-content-center w-100 mt-4">
-                    <a class="btn btn-class" href="#" role="button">Leer más<span class="ms-1"><img style="width: 20px;"
+                    <a class="btn btn-class" href="./history.html" role="button">Leer más<span class="ms-1"><img style="width: 20px;"
                                 src="./img/icon-arrow.png" alt=""></span></a>
                 </div>
             </div>
@@ -289,6 +289,34 @@
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
     <script src="./js/scrolling.js"></script>
+    <script>
+        let menues = document.querySelectorAll('.navbar-nav a');
+
+        menues[0].addEventListener('click', ()=> {
+            menues.forEach(menu => {
+                menu.classList.remove('active');
+            });
+            menues[0].classList.add('active');
+        });
+        menues[1].addEventListener('click', ()=> {
+            menues.forEach(menu => {
+                menu.classList.remove('active');
+            });
+            menues[1].classList.add('active');
+        });
+        menues[2].addEventListener('click', ()=> {
+            menues.forEach(menu => {
+                menu.classList.remove('active');
+            });
+            menues[2].classList.add('active');
+        });
+        menues[3].addEventListener('click', ()=> {
+            menues.forEach(menu => {
+                menu.classList.remove('active');
+            });
+            menues[3].classList.add('active');
+        });
+    </script>
 </body>
 
 </html>

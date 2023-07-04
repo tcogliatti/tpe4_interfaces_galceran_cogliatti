@@ -1,4 +1,4 @@
 .nosotros{
-    background-image: url('../img/profesor.jpg');
+    background-image: url('../img/profesor.jpg') !important;
 
 }

@@ -3,6 +3,7 @@
 }
 .history{
     background-image: url('../img/frente_escuela.png');
+    background-position: center;
 }
 /* .history-div{
     padding-top: 50px;

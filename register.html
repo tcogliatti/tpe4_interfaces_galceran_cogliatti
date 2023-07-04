@@ -21,8 +21,11 @@
         <div class="top-nav d-none d-sm-block"></div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./img/escudo_big.png" alt=""></a>
-
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/escudo_big.png" alt="">
+                    <h6 class="text-brand d-none d-sm-block m-0 p-0 text-end"><span class="fw-bolder">C</span>olegio <br><span class="fw-bolder">D</span>el <span class="fw-bolder">C</span>armen</h6>
+                    <h6 class="text-city d-none d-sm-block m-0 p-0 text-start"><span class="fw-bolder">C</span>acharí</h6>
+                </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -40,25 +43,25 @@
                 </nav>
             </div>
         <div class="header">
-            
+            <div class="back-grad" ></div>
         </div>
 
-        <div class="login">
-            <form action="./index.html" method="post">
+        <div class="login mx-auto" style="top: 120px">
+            <form action="./thanks.html" method="post">
                 <div class="container ctn-form-login">
                     <div class="cancelbtn">
                         <a href="./index.html"><img src="img/cancel.png"  alt="cancelar"></a> 
                     </div>
-                    <label for="uname">Nombre de usuario</label>
+                    <label for="uname">Nombre de usuario<span class="ms-1" style="color: #d3776c;">*</span></label>
                     <input type="text" placeholder="" name="uname" required>
                 
-                    <label for="psw">Contraseña</label>
+                    <label for="psw">Contraseña<span class="ms-1" style="color: #d3776c;">*</span></label>
                     <input type="password" placeholder="8 o más caracteres" name="psw" required>
 
-                    <label for="psw">Repetir contraseña</label>
+                    <label for="psw">Repetir contraseña<span class="ms-1" style="color: #d3776c;">*</span></label>
                     <input type="password" placeholder="" name="repit-psw" required>
                     
-                    <label for="psw">Correo electrónico</label>
+                    <label for="psw">Correo electrónico<span class="ms-1" style="color: #d3776c;">*</span></label>
                     <input type="email" placeholder="" name="email" required>
                     
                     <div id="msgBox"></div>  
@@ -71,6 +74,69 @@
 
 
     </div>
+
+    <footer class="p-4 pb-sm-0 px-sm-5 d-flex flex-column align-content-center">
+        <div class="container d-sm-flex">
+            <div class="footer-escudo d-flex justify-content-center d-flex align-items-center mx-auto mb-4 mb-sm-0 col-12 col-sm-1">
+                <img src="./img/escudo_b&w.png" alt="">
+            </div>
+            <div class="my-4 my-sm-0 col-12 col-sm-5 d-flex justify-content-center flex-column">
+                <h4>12 de Mayo 687 <span><img src="./img/icon_mapa.png" alt=""></span></h4>
+                <h4 class="me-4 pe-2">Cacharí - Provincia de Buenos Aires</h4>
+                <h4 class="me-4 pe-2">Argentina</h4>
+                <h4 class="me-4 pe-2">CP7214</h4>
+                <h4>02282 - 44253535 <span><img src="./img/icon_tel.png" alt=""></span></h4>
+                <h4>recepcion@colegiodelcarmen.com <span><img src="./img/icon_mail.png" alt=""></span></h4>
+            </div>
+            <div class="mt-4 col-12 col-sm-6">
+                <h6 class="text-end">¿Cómo llegar?</h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d205518.56249482004!2d-59.41587214693602!3d-36.403689784804094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1688158934964!5m2!1ses!2sar" 
+                class="w-100" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+  
+        <div class="mt-4 social">
+            <h6 class="text-center">Encontranos en ...</h6>
+            <div class="d-flex justify-content-center">
+                <img class="mx-2" src="./img/icon_fb.png" alt="">
+                <img class="mx-2" src="./img/icon_twitter.png" alt="">
+                <img class="mx-2" src="./img/icon_ig.png" alt="">
+                <img class="mx-2" src="./img/icon_ln.png" alt="">
+                <img class="mx-2" src="./img/icon_ytb.png" alt="">
+            </div>
+            <hr>
+        </div>
+        
+        <div class="trabajamos-con">
+            <h6 class="mt-4">Trabajamos junto a:</h6>
+            <div class="d-flex flex-wrap justify-content-around">
+                <img class="logo-uca" src="./img/logo_uca.png" alt="">
+                <img class="logo-crea d-none d-sm-block" src="./img/logo_crea.png" alt="">
+                <img class="logo-unicen"src="./img/logo_unicen.png" alt="">
+                <img class="logo-crea-mobile mt-3 d-block d-sm-none"src="./img/logo_crea.png" alt="">
+            </div>
+        </div>
+        <div class="mb-sm-0 pb-0 footer-menu d-none d-sm-block">
+            <ul class="d-flex justify-content-center">
+                <li class="mx-3">
+                    <a href="news.html">Novedades</a>
+                </li>
+                <li class="mx-3">
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="mx-3">
+                    <a href="history.html">Historia</a>
+                </li>
+                <li class="mx-3">
+                    <a href="comment.html">Contacto</a>
+                </li>
+                <li class="mx-3">
+                    <a href="login.html">Iniciar sesión</a>
+                </li>
+            </ul>
+        </div>
+  
+    </footer> 
 </body>
 
 
@@ -93,18 +159,20 @@
             
             if(inputs[1].value == inputs[2].value)
                 if(inputs[1].value.length >= 8 && inputs[2].value.length >= 8)
-                    window.location.href = './index.html';
+                    window.location.href = './thanks.html';
                 else
-                    msgBox.innerHTML = "<p class='text-danger text-center my-0'>La contraseña debe tener al menos 8 caracteres</p>"
+                    msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>La contraseña debe tener al menos 8 caracteres</p>"
             else
-                msgBox.innerHTML = "<p class='text-danger text-center my-0'>Las contraseñas no coinciden</p>"
+                msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>Las contraseñas no coinciden</p>"
         } else
-            msgBox.innerHTML = "<p class='text-danger text-center my-0'>Error en la carga de datos</p>"
+            msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>No pueden haber campos vacíos</p>"
 
 
       
     });
 </script>
+<script src="./js/scrolling.js" ></script>
+
 
 </body>
 

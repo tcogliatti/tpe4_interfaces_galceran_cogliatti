@@ -589,4 +589,11 @@ footer .social hr {
     left: 80px;
     top: 9px;
 }
-
+a.btn-class:hover{
+    background-color: #898989;
+    color: white !important;
+    border-color: white !important;
+}
+a.btn-class:hover .iconn {
+    filter: grayscale(100%) !important; /* Aplicar filtro al icono al hacer hover */
+  }

@@ -156,16 +156,20 @@
         e.preventDefault();
 
         if (form.checkValidity()){
-            
             if(inputs[1].value == inputs[2].value)
                 if(inputs[1].value.length >= 8 && inputs[2].value.length >= 8)
-                    window.location.href = './thanks.html';
+                    window.location.href = `./user_created.html?name=${inputs[0].value}`;
                 else
                     msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>La contraseña debe tener al menos 8 caracteres</p>"
             else
                 msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>Las contraseñas no coinciden</p>"
-        } else
-            msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>No pueden haber campos vacíos</p>"
+        }else{
+            if(inputs[0].value == "" || inputs[1].value == "" || inputs[2].value == "" || inputs[2].value == "" )
+                msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>Parece que has olvidado completar algun campo</p>"
+            else
+                msgBox.innerHTML = "<p style='color: #d3776c !important;' class='text-center my-0'>Ha habido un error con el formato de tu correo</p>"
+        }
+            
 
 
       

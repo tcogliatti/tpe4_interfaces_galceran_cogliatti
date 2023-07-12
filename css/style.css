@@ -227,8 +227,10 @@ section div {
     .navbar-brand img{
         position: absolute;
         align-items: end !important;
-        width: 8% !important;
-        left: 10%;
+        width: 101px !important;
+        /* width: 8% !important; */
+        left: 118px;
+        /* left: 10%; */
         top: -30px;
         /* transition: top .3s ease-in-out; */
     }
@@ -569,17 +571,23 @@ footer .social hr {
 
 }
 
+@media only screen and (min-width: 575px) {
+    .container-fluid{
+        height: 49px !important;
+    }
+}
+
 .text-brand{
     position: absolute;
     color: #322a66 !important;
-    left: 35px;
+    left: 24px;
     top: 5px;
     transition: left .3s ease-in-out !important;
 }
 .text-city{
     position: absolute;
     color: #322a66 !important;
-    left: 233px;
+    left: 228px;
     top: 15px;
     transition: left .3s ease-in-out !important;
 }
@@ -588,6 +596,7 @@ footer .social hr {
     color: #322a66 !important;
     left: 80px;
     top: 9px;
+    transition: left .3s ease-in-out !important;
 }
 a.btn-class:hover{
     background-color: #898989;
